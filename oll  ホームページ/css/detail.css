@@ -1,0 +1,163 @@
+@charset "utf-8";
+
+.item-detail {
+	padding: 30px;
+	margin: 30px auto 80px auto;
+	background: #f2f2f2;
+	display: flex;
+}
+.item-detail-main {
+	margin-right: 3%;
+	width: 50%;
+}
+.item-detail img{
+  width: 100%;
+	display: block;
+}
+.mouse-note {
+	text-align: center;
+	margin-top: 10px;
+}
+.item-detail-info {
+	width: 47%;
+}
+.item-detail-name {
+	/* padding-top: 15px; */
+	font-weight: bold;
+	font-size: 20px;
+	margin-bottom: 18px;
+}
+.item-detail-brand {
+	font-weight: bold;
+	font-size: 18px;
+	margin-bottom: 18px;
+} 
+.item-size {
+	margin-bottom: 30px;
+	font-size: 18px;
+}
+.item-size-list {
+	margin-bottom: 18px;
+}
+.material {
+	margin-bottom: 18px;
+	font-weight: bold;
+
+}
+.material-title {
+	font-weight: bold;
+	margin-bottom: 15px;
+	font-size: 20px;
+}
+.material-list {
+	font-size: 15px;
+	font-weight: normal;
+}
+
+.size {
+	margin-bottom: 18px;
+	font-weight: bold;
+}
+.size-title {
+	font-weight: bold;
+	margin-bottom: 15px;
+	font-size: 20px;
+}
+.size-list {
+	font-size: 15px;
+	font-weight: normal;
+}
+.item-size-select {
+	margin-bottom: 25px;
+	font-weight: bold;
+	font-size: 18px;
+}
+.item-size-list li {
+	margin-bottom: 3px;
+	padding: 5px 20px;
+	display: inline-block;
+	background: #fff;
+	border-radius: 3px;
+	font-weight: bold;
+	border: 1px solid #e5e5e5;
+	font-size: 16px;
+	cursor: pointer;
+}
+.item-size-list li.is-active {
+	background: #333;
+	color: #fff;
+}
+.item-detail-price {
+	margin-bottom: 20px;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+[data-accordion="trigger"] {
+	margin-top: 50px;
+	font-weight: bold;
+	font-size: 18px;
+}
+[data-accordion="trigger"]::before {
+	content: "▼";
+	margin-right: 5px;
+}
+[data-accordion="trigger"].is-active::before {
+	content: "ー";
+}
+[data-accordion="target"] {
+	margin-top: 30px;
+	font-size: 16px;
+	display: none;
+}
+.new-label {
+	background: #F03A47;
+	color: #fff;
+	display: inline-block;
+	font-weight: bold;
+	padding: 5px 10px;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	line-height: 1;
+}
+.flash {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: green;
+	text-align: center;
+	padding: 10px 15px;
+	color: #fff;
+	z-index: 100;
+}
+/* レビュー */
+.c-section {
+	margin: 0 auto 60px auto;
+}
+.review {
+  font-size: 30px;  
+	display: flex;
+}
+.review li {
+	margin-right: 20px;
+}
+.review .is-active {
+color: rgb(234, 162, 18);
+}
+@media screen and (max-width: 768px ) {
+	/* スマホ共通ここから */
+.item-detail {
+	display: block;
+	padding: 20px;
+	margin: 0 auto 80px;
+}
+.item-detail-main {
+	width: auto;
+	margin-bottom: 20px;
+	margin-right: 0;
+}
+.item-detail-info {
+	width: auto;
+}
+}
